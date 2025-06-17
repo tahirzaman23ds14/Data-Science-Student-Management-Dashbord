@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#nav{
+    height: 95px;
+    width: 100%;
+    background-color: black;
+    color: white; 
+    
+}
+.content{
+    display: flex;
+   
+  
+    
+}
+.content>svg{
+   color: rgb(249 115 22 ) ;
+  
+}
+.content>h1{
+    display: inline;
+    padding-left: 10px;
+    padding-top: 12px;
+}
+.one{
+    height: 70px;
+    width: 67%;
+    display: flex;
+    margin-left: 400px;
+    margin-top: 21px;
+    gap: 40px;
+    
+    text-align: center;
+    
+}
+
+.button, .buttons {
+    display: inline-block;
+    text-decoration: none; /* remove underline */
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 12px;
+    width: 100px;
+    height:40px ;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button {
+    background-color: rgb(249, 115, 22);
+    color: white;
+}
+
+.buttons {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.buttons:hover {
+    background-color: rgba(143, 74, 25, 0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === Base Styles (Already written above, so no change needed) === */
+
+
+/* ========== Large Screens (Desktops) ========== */
+@media (min-width: 1200px) {
+  .one {
+    margin-left: 400px;
+    gap: 40px;
+  }
+
+  .button, .buttons {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .content > h1 {
+    font-size: 26px;
+  }
+}
+
+
+/* ========== Medium Screens (Laptops/Tablets) ========== */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .one {
+    margin-left: 100px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .button, .buttons {
+    width: 90px;
+    height: 38px;
+    font-size: 14px;
+  }
+
+  .content > h1 {
+    font-size: 22px;
+  }
+
+  svg {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+
+/* ========== Small Screens (Phones) ========== */
+@media (max-width: 767px) {
+  #nav {
+    height: auto;
+    padding: 15px 10px;
+    flex-direction: column;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content > h1 {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+
+  .one {
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+  }
+
+  .button, .buttons {
+    width: 90%;
+    font-size: 16px;
+    height: 40px;
+  }
+
+  svg {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+/* ========== Extra Small Screens (very small devices) ========== */
+@media (max-width: 480px) {
+  .content > h1 {
+    font-size: 16px;
+  }
+
+  .button, .buttons {
+    width: 95%;
+    font-size: 15px;
+  }
+
+  svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
